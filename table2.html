@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAMPLE TABLE</title>
+    <style>
+      table,
+      tbody,
+      thead,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 12px;
+        background-color: white;
+      }
+      @media only screen and (max-width: 400px) {
+         div{
+          height: 100%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <thead>
+          <caption>
+            TABLE
+          </caption>
+          <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+          </tr>
+          <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+          </tr>
+          <tr>
+            <th>Begin</th>
+            <th>End</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" ; style="background-color: rgba(255, 255, 0, 0.39)">
+              8.00 a.m
+            </td>
+            <td rowspan="2" ; style="background-color: rgb(93, 75, 97)">
+              5.00 p.m
+            </td>
+            <td>Introduction to XML</td>
+          </tr>
+          <tr>
+            <td>Validity DTD and relax NG</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8.00 a.m</td>
+            <td>11.00 a.m</td>
+            <td rowspan="2">XPath</td>
+          </tr>
+          <tr>
+            <td>11.00 a.m</td>
+            <td>2.00 p.m</td>
+          </tr>
+          <tr>
+            <td>2.00pm</td>
+            <td>5.00PM</td>
+            <td>XSL Transformation</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>8.00 am</td>
+            <td>12.00pm</td>
+            <td>XSL Formatting Object</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
